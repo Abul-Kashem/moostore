@@ -1,0 +1,60 @@
+{{ 'section-weekly-picks.css' | asset_url | stylesheet_tag }}
+
+<div class="weekly-picks">
+  <h2 class="weekly-picks__header">picks of the week</h2>
+  <div class="weekly-picks__product-ctn">
+    {% for product in section.settings.collection.products %}
+      <div class="weekly-picks__item">
+        <a class="weekly-picks__item-links" href="{{ product.url }}">
+          {% assign bubble_class = '' %}
+          {% if product.tags contains 'New' %}
+            {% assign bubble_class = 'new' %}
+          {% elsif product.tags contains 'Fave' %}
+            {% assign bubble_class = 'fave' %}
+          {% elsif product.compare_at_price != blank %}
+            {% assign bubble_class = 'sale' %}
+          {% endif %}
+
+          <div class="product-bubble bubble--{{ bubble_class }}">
+            <span>
+              {% if product.tags contains 'New' %}
+                new
+              {% elsif product.tags contains 'Fave' %}
+                staff<br>
+                fave
+              {% elsif product.compare_at_price != blank %}
+                sale
+              {% endif %}
+            </span>
+          </div>
+
+          <div class="weekly-picks__item-img">
+            <img src="{{ product.images[0].src | image_url: width:'240x240'  }}" alt="">
+          </div>
+          <p class="weekly-picks__product-title">{{ product.title }}</p>
+          <div class="weekly-picks__product-price">
+            <span>{{ product.price | money }}</span>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Weekly Picks",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Weekly Picks"
+    }
+  ]
+}
+{% endschema %}

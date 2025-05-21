@@ -31,7 +31,9 @@
         "collection_B7MiBW": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "best-looks",
+            "image_bg": "shopify://shop_images/hero-beach.png",
+            "image_hover": "shopify://shop_images/hero-work-hover.png"
           }
         }
       },

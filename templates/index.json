@@ -53,6 +53,38 @@
     },
     "collection_grid_BgBhNT": {
       "type": "collection-grid",
+      "blocks": {
+        "collection_HrdPLj": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-looks"
+          }
+        },
+        "collection_KNUEPn": {
+          "type": "collection",
+          "settings": {
+            "collection": "beach"
+          }
+        },
+        "collection_Lah4JX": {
+          "type": "collection",
+          "settings": {
+            "collection": "denim"
+          }
+        },
+        "collection_DnTmJt": {
+          "type": "collection",
+          "settings": {
+            "collection": "bottoms"
+          }
+        }
+      },
+      "block_order": [
+        "collection_HrdPLj",
+        "collection_KNUEPn",
+        "collection_Lah4JX",
+        "collection_DnTmJt"
+      ],
       "name": "Collection grid",
       "settings": {
         "header": "jts"

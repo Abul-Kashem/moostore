@@ -23,7 +23,9 @@
         "collection_BjKL9Q": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "best-looks",
+            "image_bg": "shopify://shop_images/hero-beach-hover.png",
+            "image_hover": "shopify://shop_images/hero-denim-hover.png"
           }
         },
         "collection_B7MiBW": {

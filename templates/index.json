@@ -50,10 +50,18 @@
       "settings": {
         "collection": "best-looks"
       }
+    },
+    "collection_grid_BgBhNT": {
+      "type": "collection-grid",
+      "name": "Collection grid",
+      "settings": {
+        "header": "jts"
+      }
     }
   },
   "order": [
     "hero_t7Trcr",
-    "weekly_picks_7FdkqD"
+    "weekly_picks_7FdkqD",
+    "collection_grid_BgBhNT"
   ]
 }

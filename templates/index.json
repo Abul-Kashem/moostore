@@ -11,8 +11,34 @@
   "sections": {
     "hero_t7Trcr": {
       "type": "hero",
-      "settings": {
-      }
+      "blocks": {
+        "collection_TDDh8q": {
+          "type": "collection",
+          "settings": {
+            "collection": "beach",
+            "image_bg": "shopify://shop_images/hero-denim.png",
+            "image_hover": "shopify://shop_images/hero-work.png"
+          }
+        },
+        "collection_BjKL9Q": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection_B7MiBW": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_TDDh8q",
+        "collection_BjKL9Q",
+        "collection_B7MiBW"
+      ],
+      "settings": {}
     }
   },
   "order": [

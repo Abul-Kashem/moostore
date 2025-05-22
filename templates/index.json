@@ -43,9 +43,17 @@
         "collection_B7MiBW"
       ],
       "settings": {}
+    },
+    "weekly_picks_m6LeqU": {
+      "type": "weekly-picks",
+      "name": "Weekly Picks",
+      "settings": {
+        "collection": "weeky-collection"
+      }
     }
   },
   "order": [
-    "hero_t7Trcr"
+    "hero_t7Trcr",
+    "weekly_picks_m6LeqU"
   ]
 }
